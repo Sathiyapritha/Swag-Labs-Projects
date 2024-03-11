@@ -14,11 +14,11 @@ Feature: Sort feature
     Then User should see "Name (A to Z)" and "Name (Z to A)" in sort dropdown
 
 
-
+@sort
   Scenario: Verify price low to high in sort option
-    When user choose "Price (low to high)" sort option
+    Then user choose "Price (low to high)" sort option
 
 
-
+  @sort
   Scenario: Verify price high to low in sort option
-    When user choose "Price (high to low)" sort option
+    Then user should select "Price (high to low)" in sort option
